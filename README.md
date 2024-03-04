@@ -13,8 +13,6 @@ This is a simple Task Manager App built with React, TypeScript, and Material-UI.
 
 ## Project Structure
 
-The project is organized into several components to enhance code modularity and maintainability:
-
 - **`Task.tsx`:** Component for individual tasks with a checkbox and delete button.
 - **`TaskList.tsx`:** Displays a list of tasks using the `Task` component.
 - **`CreateTaskCard.tsx`:** Component for creating and adding new tasks.
