@@ -1,30 +1,39 @@
-# React + TypeScript + Vite
+# Task Manager App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple Task Manager App built with React, TypeScript, and Material-UI. The app allows users to create and organize their tasks into active and completed categories.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Create Task:** Add new tasks with a name and description.
+- **Toggle Task:** Mark tasks as completed or active with a checkbox.
+- **Delete Task:** Remove tasks from the list.
+- **Tabs:** Switch between Active and Completed tasks.
+- **Loading Indicator:** Displays a loading spinner when switching between tabs.
+- **No Tasks Message:** Inform users when there are no tasks available.
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+The project is organized into several components to enhance code modularity and maintainability:
 
-- Configure the top-level `parserOptions` property like this:
+- **`Task.tsx`:** Component for individual tasks with a checkbox and delete button.
+- **`TaskList.tsx`:** Displays a list of tasks using the `Task` component.
+- **`CreateTaskCard.tsx`:** Component for creating and adding new tasks.
+- **`Tabs.tsx`:** Component for rendering tabs (ActiveTasks, CompletedTasks) in the app.
+- **`ActiveTasks.tsx` and `CompletedTasks.tsx`:** Components for displaying Active and Completed tasks, respectively.
+- **`TasksPage.tsx`:** This is the main component for the application, handling state and logic.
+- **`App.tsx`:** Entry point of the application, rendering the `TasksPage` component.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Difficulties Faced
+
+During the development of this app, we encountered a few challenges:
+
+1. **Handling:** I encountered some challenges with toggling task completion.
+
+2. **Styling:** Faced some difficulties with Mui as i'm not used to using this library but i was able to overcome those difficulties and came up with a responsive and clean design for this App.
+
+3. **Structure:** I tried to organize the project into several components to try and enhance the readability and maintainability of the code. Hope i did a good job.
+
+
+
+
