@@ -26,7 +26,7 @@ The project is organized into several components to enhance code modularity and 
 
 ## Difficulties Faced
 
-During the development of this app, we encountered a few challenges:
+During the development of this app, I encountered a few challenges:
 
 1. **Handling:** I encountered some challenges with toggling task completion.
 
